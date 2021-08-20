@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- main style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="container"> 
+            <div class="row mx-auto gx-5">
+                <div class="col-lg-5">
+                    <img src="./images/mac.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-7">
+                    <h1>Customize your Blue 24-inch <br>
+                        iMac with Apple M1 chip.
+                    </h1>
+                    <p>
+                       Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficience core, 7-core Gpu, and 16- core Neural Engine 8Gb unified memory 256GB SSD storage Two Thunderbolt / USB 4 port magic Mouse Magic Keybord Us English.
+                    </p>
+                    
+                    <div class="my-5">
+                        <h3>Memory</h3>
+                        <div class="d-flex">
+                            <div class="ml-2">
+                                <button id="memory-minus" class="btn btn-outline-secondary me-2"> 8GB Unified memory</button>
+                            </div>
+                            <div>
+                                <button id="memory-plus" class="btn btn-outline-secondary"> 16GB Unified memory</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   <div class="my-5">
+                    <h3>Storage</h3> 
+                    <div class="d-flex">
+                     <div class="ml-2">
+                         <button class="btn btn-outline-secondary me-2"> 256GB SSD Storage</button>
+                     </div>
+                     <div>
+                         <button class="btn btn-outline-secondary me-2"> 512GB SSD Storage </button>
+                     </div>
+                     <div>
+                         <button class="btn btn-outline-secondary"> 1TB SSD Storage</button>
+                     </div>
+                    </div>
+                   </div> 
+                  
+                <div class="my-5"> 
+                    <h3>Choose your delivery option</h3>
+                    <div class="d-flex">
+                        <div class="ml-2">
+                            <button class="btn btn-outline-secondary me-2">Friday,Aug 25 Free Prime Dekivery</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-secondary"> Friday, Aug 21 Delivery Charge $20</button>
+                        </div>
+                    </div>
+                </div>
+               
+               <div>
+                   <div class="row">
+                       <div class="col-md-8">
+                           <h5>Best Price</h5>
+                           <hr>
+                           <h5>Extra Memory cost</h5>
+                           <hr>
+                           <h5>Extra Storage Cost</h5>
+                           <hr>
+                           <h5>Delivery Charge</h5>
+                           <hr>
+                           <h5>Total price</h5>
+                           <hr>                       
+                        </div>
+                       <div class="col-md-4">
+                           <h5>$<span id="starting-price">1299</span></h5>
+                           <hr>
+                           <h5>$<span id="memory-incrase">0</span></h5>
+                           <hr>
+                           <h5>$<span>0</span></h5>
+                           <hr>
+                           <h5>$<span>0</span></h5>
+                           <hr>
+                           <h5>$<span>1299</span></h5>
+                       </div>
+                   </div>
+               </div>
+
+               <div>
+                   <h4>Add Promo code</h4>
+                   <input type="text">
+                   <button class="btn btn-danger">Apply</button>
+               </div>
+
+            </div>
+            <hr class="mt-2">
+            <h2 class="text-center">Total: $1299</h2>
+            </div>
+        </section>
+    </main>
+
+    <!-- javascript link -->
+    <script src="app.js"></script>
+</body>
+</html>
