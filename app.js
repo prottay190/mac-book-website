@@ -1,20 +1,31 @@
 function updateProduct(product, price, isIncrase){
     const productInput = document.getElementById(product + '-incrase');
-    const productNumber = productInput.innerText;
+    const productPrice = productInput.innerText;
     if(isIncrase){
-        productInput.innerText = parseInt(productNumber) * 0 ;
+        productInput.innerText = parseInt(productPrice) * price;
     }
-    else if(productNumber < 180){
-        productInput.innerText = parseInt(productNumber) + 180;
+    else if(productPrice < 180){
+        productInput.innerText = parseInt(productPrice) + price;
     }
-    return productNumber;
+    return productPrice;
     
 }
 //memory details
-document.getElementById('memory-minus').addEventListener('click',function(){
-  updateProduct('memory', 180, true)
+document.getElementById('memory-conastant').addEventListener('click',function(){
+  updateProduct('memory', 0, true);
 });
 
 document.getElementById('memory-plus').addEventListener('click', function(){
-    updateProduct('memory', 180, false)
+    updateProduct('memory', 180, false);
+});
+//delivery details
+document.getElementById('delivery-conastant').addEventListener('click', function(){
+    updateProduct('delivary', 0, true);
+});
+document.getElementById('delivery-plus').addEventListener('click', function(){
+    const deliveryInput = document.getElementById('delivary-incrase');
+    const deliveryCost = deliveryInput.innerText;
+    if( deliveryCost < 20){
+        deliveryInput.innerText = parseInt(deliveryCost) + 20;
+    }
 })
