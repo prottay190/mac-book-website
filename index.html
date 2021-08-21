@@ -7,8 +7,6 @@
     <title>Mac Book Pro</title>
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- main style -->
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
@@ -41,13 +39,13 @@
                     <h3>Storage</h3> 
                     <div class="d-flex">
                      <div class="ml-2">
-                         <button class="btn btn-outline-secondary me-2"> 256GB SSD Storage</button>
+                         <button id="storage-conastant" class="btn btn-outline-secondary me-2"> 256GB SSD Storage</button>
                      </div>
                      <div>
-                         <button class="btn btn-outline-secondary me-2"> 512GB SSD Storage </button>
+                         <button id="storage-add" class="btn btn-outline-secondary me-2"> 512GB SSD Storage </button>
                      </div>
                      <div>
-                         <button class="btn btn-outline-secondary"> 1TB SSD Storage</button>
+                         <button id="storage-plus" class="btn btn-outline-secondary"> 1TB SSD Storage</button>
                      </div>
                     </div>
                    </div> 
@@ -83,24 +81,24 @@
                            <hr>
                            <h5>$<span id="memory-incrase">0</span></h5>
                            <hr>
-                           <h5>$<span>0</span></h5>
+                           <h5>$<span id="storage-incrase">0</span></h5>
                            <hr>
                            <h5>$<span id="delivary-incrase">0</span></h5>
                            <hr>
-                           <h5>$<span>1299</span></h5>
+                           <h5>$<span id="mac-total-cost">1299</span></h5>
                        </div>
                    </div>
                </div>
 
                <div>
                    <h4>Add Promo code</h4>
-                   <input type="text">
-                   <button class="btn btn-danger">Apply</button>
+                   <input id="promo-input" type="text">
+                   <button id="promo-btn" class="btn btn-danger">Apply</button>
                </div>
 
             </div>
             <hr class="mt-2">
-            <h2 class="text-center">Total: $1299</h2>
+            <h2 class="text-center">Total: $<span id="mac-price">1299</span></h2>
             </div>
         </section>
     </main>
