@@ -10,6 +10,7 @@ function updateProduct(product, price, isIncrase){
     
 //   total 
   calculatedTotal();
+  
 };
 
 
